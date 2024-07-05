@@ -1,0 +1,45 @@
+.body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#FFF;
+    color: #333;
+}
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding:  10px 0;
+    font-size: 1.5em;
+}
+header  .logo img {
+    width: 50px;
+}
+header .localisation {
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+.main {
+    padding: 20px;
+
+}
+.main .intro {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.main .intro h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+
+}
+.fonctionnement  .step {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #FFF;
+    box-shadow: 0 2px 5px rgba ( 0, 0, 0, 0);
+}
+ 
