@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.link a {
+  font-size: 24px;
+}
+
+.logo img {
+  height: 20px;
+}
+
+main {
+  padding: 20px;
+  background-color: #f3f3f3;
+}
+
+.restaurant img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.restaurant h1 {
+  font-style: italic;
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.restaurant i {
+  font-size: 24px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+.restaurant i i :hover {
+  color: aqua;
+}
+
+.menu {
+  margin-top: 32px;
+}
+.menu h2, .menu h3, .menu h4 {
+  font-size: 20px;
+}
+.menu .menu-item {
+  background-color: white;
+  padding: 16px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  height: 40px;
+}/*# sourceMappingURL=resto1.css.map */

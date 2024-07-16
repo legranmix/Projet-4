@@ -4,6 +4,10 @@ body {
     padding: 0;
     box-sizing: border-box;
     width: 100%;
+
+}
+main{
+    padding: 10px;
 }
 #loader {
     position: fixed;
@@ -37,7 +41,7 @@ header  {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 10px;
+        
         
 
     .logo img {
@@ -55,6 +59,7 @@ header  {
         justify-content:center;
         margin-top: 10px;
         box-shadow:  5px 0px 0px 5px rgba(0,0,0,0.25);
+        
         
         
         
@@ -127,7 +132,7 @@ header  {
    }
    
 .fonctionnement {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     
     h2 {
@@ -177,9 +182,12 @@ header  {
 }
  
 .restaurants {
+    
     width: 100%;
-    padding: 20px;
     background-color: #F6F6F6;
+    padding: 10px;
+    margin: auto;
+    
 
     h2 {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -188,7 +196,8 @@ header  {
         
     }
      .restaurant-card {
-        width: 85%;
+        
+        
         position: relative;
         margin-bottom: 20px;
         border: 1px solid #EAEAEA;
@@ -196,13 +205,15 @@ header  {
         overflow: hidden;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         background-color: white;
+        padding: 10PX;
         cursor: pointer;
         
         
         
         
        img {
-        
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
         width: 100%;
         height: auto;
         display: block;
@@ -246,9 +257,9 @@ header  {
     &.new::after{
         content: "Nouveau";
         position: absolute;
-        top: 10px;
-        right: 10px;
-        background-color: #008766;
+        top: 25px;
+        right: 25px;
+        background-color: #99E2D0;
         color: white;
         padding: 5px 10px;
         font-size: 14px;
@@ -451,7 +462,7 @@ footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 20px  50px ;
+        padding: 10px;
 
     .footer-links{
         justify-content: flex-start;
