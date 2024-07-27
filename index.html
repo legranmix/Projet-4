@@ -5,6 +5,10 @@
    <meta name="viewport" content="widht-device-widht, initial-scale=1.0">
    <title>Ohmyfood</title>
    <link rel="stylesheet" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+
    <link rel="stylesheet" href= "sass/main.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   </head>
@@ -27,82 +31,115 @@
         </div>
      </div>
   </header>
-
-  <main>
+   <main>
+    <section>
+      <div class="intro">
+        <div class="intro-title">
+      <h1>Réservez le menu qui vous convient</h1>
+     </div>
+     <p>Découvrez des restaurants d'execption, selectionnés par nos soins.</p>
     
-    <section class="intro">
-   		<h2>Réservez le menu qui vous convient</h2>
-   		<p>Découvrez des restaurants d'execption,selectionnés par nos soins.</p>
-   		<button class="button explore-btn">Explorez nos restaurants</button>
-   	</section>
-  
+   <div class="button-box">
+   		<button class="button explore-btn">Explorer nos restaurants</button>
+     </div>
+    </div>
+    
+    </section>
+ 
 
     <section class="fonctionnement">
           <h2>Fonctionnement</h2>
-        <div class="step">
+        <div class="steps">
+          <div class="step">
           <span class="step-number">1</span>
+          <div class="step-content">
             <i class="fa-solid fa-mobile-screen-button"></i>
             <p>Choisissez un restaurant</p>
         </div>
+      </div>
         <div class="step">
           <span class="step-number">2</span>
+          <div class="step-content">
             <i class="fa-solid fa-list"></i>
             <p>Composez votre menu</p>
         </div>
+      </div>
         <div class="step">
           <span class="step-number">3</span>
+          <div class="step-content">
             <i class="fa-solid fa-store"></i>
             <p>Degustez au restaurant</p>
+        </div>
+        </div>
         </div>
      </section>
 
    	<section class="restaurants">
    		<h2>Restaurants</h2>
    		<div class="restaurant-card new">
-        <a href="menu-palettedugout.html">
+        <a href="resto1.html">
    			<img src="assets/images/restaurants/resto1.jpg" alt="la palette du gout">
         </a>
         <div class="card-content">
-   			<h3 class="card-title">La palette du gout <i class="fa-regular fa-heart"></i></h3>
+          <div class="card-content-libs">
+   			<h3 class="card-title">La palette du gout</h3>
    			<p class="card-subtitle">Ménilmontant</p>
+      </div>
+        <div class="card-content-icons">
+          <i class="fa-regular fa-heart heart--empty"></i>
+          <i class="fa-solid fa-heart heart--full"></i>
         </div>
-       
+        </div>
+      </div>
       
-   		</div>
+   		
    		<div class="restaurant-card new">
-        <a href="menu-noteenchantée.html">
+        <a href="resto2.html">
    			<img src="assets/images/restaurants/resto2.jpg" alt="La note enchantée">
          </a>
          <div class="card-content">
-   			<h3 class="card-title">La note enchantée <div class="heart-color"><i class="fa-solid fa-heart"></i></h3>
-   			<p class="card-subtitle">Charonne</p></div>
+          <div class="card-content-libs">
+   			<h3 class="card-title">La note enchantée</h3>
+   			<p class="card-subtitle">Charonne</p>
+        </div>
+        <div class="card-content-icons">
+          <i class="fa-regular fa-heart heart--empty"></i>
+          <i class="fa-solid fa-heart heart--full"></i>
         </div>
        
-     
+         </div>
    		</div>
       <div class="restaurant-card">
-        <a href="menu-alafrancaise.html">
+        <a href="resto3.html">
           <img src="assets/images/restaurants/resto3.jpg" alt="A la francaise">
           </a>
            <div class="card-content">
-          <h3 class="card-title">la francaise<i class="fa-regular fa-heart"></i></h3>
+            <div class="card-content-libs">
+          <h3 class="card-title">la francaise</h3>
           <p class="card-subtitle">Cité rouge</p>
           </div>
-          
-       
+          <div class="card-content-icons">
+            <i class="fa-regular fa-heart heart--empty"></i>
+            <i class="fa-solid fa-heart heart--full"></i>
+          </div>
+        </div>
       </div>
       <div class="restaurant-card">
-        <a href="menu-ledelicedessens.html">
+        <a href="resto4.html">
         <img src="assets/images/restaurants/resto4.jpg" alt="Le délice des sens">
         </a>
         <div class="card-content">
-        <h3 class="card-title">délice des sens<i class="fa-regular fa-heart"></i></h3>
+          <div class="card-content-libs">
+        <h3 class="card-title">délice des sens</h3>
         <p class="card-subtitle">Folie-Méricourt</p>
       </div>
-        
-      
-     </div>
-   </section>
+      <div class="card-content-icons">
+        <i class="fa-regular fa-heart heart--empty"></i>
+        <i class="fa-solid fa-heart heart--full"></i>
+      </div>
+        </div>
+      </div>
+    </section>
    </main>
 
   <footer>

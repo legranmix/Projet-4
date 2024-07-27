@@ -1,12 +1,12 @@
 body {
-  margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  margin: 0;
   width: 100%;
 }
 
-main {
-  padding: 10px;
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
 }
 
 #loader {
@@ -42,21 +42,22 @@ header .header-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid grey;
   padding: 0;
-  width: 100%;
+  margin: 0;
 }
 header .header-container .logo img {
   width: 150px;
-  padding-top: 10px;
+  margin-top: 20px;
 }
 header .header-container .local-container {
   background-color: #EAEAEA;
   width: 100%;
-  height: 50px;
+  height: 40px;
   display: flex;
   justify-content: center;
-  margin-top: 10px;
-  box-shadow: 5px 0px 0px 5px rgba(0, 0, 0, 0.25);
+  margin-top: 5px;
+  border-top: 1px solid grey;
 }
 header .header-container .local-container .localisation {
   display: flex;
@@ -66,76 +67,98 @@ header .header-container .local-container .localisation {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 header .header-container .local-container .localisation i {
-  margin-right: 10px;
+  margin-right: 13px;
 }
 
-.intro {
+section .intro {
   text-align: center;
   background-color: #F6F6F6;
-  height: 220px;
   width: 100%;
-  padding: 0;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.intro h2 {
-  font-size: 24px;
-  font-weight: bold;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin-top: 5px;
+section .intro .intro-title {
+  width: 275px;
+  height: 68px;
+  left: 42px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
-.intro p {
-  font-size: 18px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+section .intro .intro-title h1 {
+  font-size: 26px;
+  font-family: Roboto;
+  font-weight: bold;
+  line-height: 28.13px;
+  text-align: center;
+}
+section .intro p {
+  font-size: 19.04px;
+  font-family: Roboto;
   font-weight: 300;
+  line-height: 21.09px;
+  text-align: center;
+  margin-bottom: 35px;
 }
-.intro .explore-btn {
-  width: 190px;
-  height: 45px;
-  background: linear-gradient(#9356DC, #FF79DA);
+section .button-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+section .button-box .explore-btn {
+  width: 200px;
+  height: 46px;
+  background: linear-gradient(#FF79DA, #9356DC);
   color: white;
-  padding: 10px 20px;
   border: none;
   border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.3s, box-shadow 0.3s;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15.05px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.intro .explore-btn:hover {
+section .button-box .explore-btn:hover {
   background-color: #9356DC;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.fonctionnement {
-  padding: 10px;
-  text-align: center;
-  width: 100%;
-}
 .fonctionnement h2 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-seri;
-  display: flex;
-  align-items: flex-start;
-  font-size: 24px;
-  font-weight: 700;
-  
-  
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 20px;
+  padding-top: 20px;
 }
-.fonctionnement .step {
+.fonctionnement .steps {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 5px;
+}
+.fonctionnement .steps .step {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px 0;
-  width: 300px;
-  height: 70px;
+  margin: 10px;
+  width: 340px;
+  height: 75px;
   background-color: #F6F6F6;
   border-radius: 20px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
   font-size: 16px;
   position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.fonctionnement .step .step-number {
+.fonctionnement .steps .step .step-number {
   background-color: #9356DC;
   color: white;
   width: 25px;
@@ -148,100 +171,110 @@ header .header-container .local-container .localisation i {
   left: 0;
   transform: translate(-50%, -50%);
 }
-.fonctionnement .step i {
-  margin-right: 10px;
+.fonctionnement .steps .step .step-content {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
 }
-.fonctionnement .step p {
-  margin: 0;
+.fonctionnement .steps .step .step-content i {
+  font-size: 18px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+}
+.fonctionnement .steps .step .step-content i p {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Roboto;
 }
 
 .restaurants {
-  width: 100%;
   background-color: #F6F6F6;
-  padding: 10px;
-  margin: auto;
+  padding: 0;
+  margin-top: 50px;
+  width: 100%;
 }
 .restaurants h2 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: bold;
   display: flex;
   align-items: flex-start;
+  padding-top: 25px;
+  margin-left: 15px;
 }
 .restaurants .restaurant-card {
+  width: 340px;
   position: relative;
   margin-bottom: 20px;
   border: 1px solid #EAEAEA;
-  border-radius: 20px;
+  border-radius: 15px;
+  height: 250px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: white;
-  padding: 10PX;
   cursor: pointer;
-}
-.restaurants .restaurant-card img {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  width: 100%;
-  height: auto;
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.restaurants .restaurant-card .card-content {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-}
-.restaurants .restaurant-card .card-content .card-title {
-  font-size: 18px;
-  margin: 0 0 5px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.restaurants .restaurant-card .card-content .card-title i {
-  cursor: pointer;
-}
-.restaurants .restaurant-card .card-content .card-title .heart-color {
-  color: #9356DC;
-}
-.restaurants .restaurant-card .card-content .card-subtitle {
-  margin: 0;
-  font-size: 17px;
-  text-decoration: none;
-  font-weight: 300;
-  color: black;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 20px;
+  margin-left: 15px;
 }
 .restaurants .restaurant-card.new::after {
   content: "Nouveau";
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 10px;
+  right: 10px;
   background-color: #99E2D0;
-  color: white;
+  color: black;
   padding: 5px 10px;
   font-size: 14px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
   border-radius: 5px;
 }
-
-footer {
+.restaurants .restaurant-card img {
+  width: 340px;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.restaurants .restaurant-card .card-content {
+  display: flex;
+  flex-direction: column;
+}
+.restaurants .restaurant-card .card-content .card-content-libs {
+  margin-left: 15px;
+}
+.restaurants .restaurant-card .card-content .card-content-libs .card-title {
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 700;
+  padding-top: 10px;
+}
+.restaurants .restaurant-card .card-content .card-content-libs .card-subtitle {
+  font-size: 17px;
+  font-weight: 300;
+  font-family: Roboto;
+  margin: 5px;
+  margin-left: 0;
+}
+.restaurants .restaurant-card .card-content .card-content-libs .card-content-icons .heart--full {
+  opacity: 0;
+}
+.restaurants .restaurant-card .card-content .card-content-libs .card-content-icons .heart--full:hover, .restaurants .restaurant-card .card-content .card-content-libs .card-content-icons .heart--full:active {
+  opacity: 1;
+}
+.restaurants footer {
   background-color: black;
   color: white;
   padding: 20px 0;
   text-align: center;
 }
-footer footer.logo img {
+.restaurants footer footer.logo img {
   margin-bottom: 10px;
 }
-footer .footer-links {
+.restaurants footer .footer-links {
   display: flex;
   flex-direction: column;
 }
-footer .footer-links a {
+.restaurants footer .footer-links a {
   color: white;
   text-decoration: none;
   margin: 5px 0;
@@ -253,112 +286,111 @@ footer .footer-links a {
   margin-left: 20px;
   margin: 10px;
 }
-footer .footer-links a:hover {
+.restaurants footer .footer-links a:hover {
   text-decoration: underline;
 }
-
 @media (min-width: 768px) {
-  .header-container {
+  .restaurants .header-container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
   }
-  .logo img {
+  .restaurants .logo img {
     width: 150px;
   }
-  .localisation {
+  .restaurants .localisation {
     display: flex;
     align-items: center;
     font-size: 18px;
   }
-  .localisation I {
+  .restaurants .localisation I {
     margin-right: 10px;
   }
-  .intro {
+  .restaurants .intro {
     text-align: center;
     padding: 50px 0;
   }
-  .intro h2 {
+  .restaurants .intro h2 {
     font-size: 36px;
     margin-bottom: 20px;
   }
-  .intro p {
+  .restaurants .intro p {
     font-size: 18px;
     margin-bottom: 40px;
   }
-  .intro .explore-btn {
+  .restaurants .intro .explore-btn {
     white-space: nowrap;
   }
-  .fonctionnement {
+  .restaurants .fonctionnement {
     text-align: center;
     padding: 50px 0;
     display: flex;
     flex-direction: row;
   }
-  .fonctionnement h2 {
+  .restaurants .fonctionnement h2 {
     font-size: 30px;
     margin-top: 0;
   }
-  .fonctionnement .step {
+  .restaurants .fonctionnement .step {
     margin: 20px;
   }
-  .restaurants {
+  .restaurants .restaurants {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-  .restaurants .restaurant-card:hover {
+  .restaurants .restaurants .restaurant-card:hover {
     transform: scale(1.02);
   }
 }
 @media (min-width: 1024px) {
-  .header-container {
+  .restaurants .header-container {
     max-width: 1200px;
   }
-  .local-container {
+  .restaurants .local-container {
     width: 100%;
   }
-  .intro h2 {
+  .restaurants .intro h2 {
     font-size: 56px;
     white-space: nowrap;
   }
-  .intro p {
+  .restaurants .intro p {
     font-size: 28px;
   }
-  .intro .explore-btn {
+  .restaurants .intro .explore-btn {
     font-size: 14px;
   }
-  .fonctionnement {
+  .restaurants .fonctionnement {
     display: flex;
     align-items: center;
     margin-bottom: 50px;
   }
-  .fonctionnement h2 {
+  .restaurants .fonctionnement h2 {
     margin-bottom: 20px;
   }
-  .fonctionnement .step {
+  .restaurants .fonctionnement .step {
     display: flex;
     align-items: center;
     text-align: center;
     margin: 0 20px;
     height: 70px;
   }
-  .restaurants {
+  .restaurants .restaurants {
     grid-template-columns: repeat(3, 1fr);
   }
-  .restaurants .restaurant-card:hover {
+  .restaurants .restaurants .restaurant-card:hover {
     transform: scale(1.01);
   }
-  footer {
+  .restaurants footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
   }
-  footer .footer-links {
+  .restaurants footer .footer-links {
     justify-content: flex-start;
   }
-  footer .footer-logo img {
+  .restaurants footer .footer-logo img {
     width: 120px;
   }
 }/*# sourceMappingURL=main.css.map */
