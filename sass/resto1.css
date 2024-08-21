@@ -1,6 +1,9 @@
 body {
   margin: 0;
-  padding: 0;
+}
+
+.main-container {
+  width: 100%;
 }
 
 .header-container {
@@ -12,59 +15,75 @@ body {
 }
 
 .link a {
-  font-size: 24px;
+  font-size: 15px;
 }
 
 .logo img {
-  height: 20px;
+  font-size: 50px;
 }
 
-main {
-  padding: 20px;
-  background-color: #f3f3f3;
-}
-
-.restaurant img {
+.image-bg {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  z-index: 1;
 }
 
-.restaurant h1 {
-  font-style: italic;
-  font-size: 28px;
-  font-weight: 400;
-  margin-top: 10px;
+.restaurant {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  align-items: normal;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  padding: 32px 13px 40px;
+  margin: 0;
 }
-
-.restaurant i {
-  font-size: 24px;
-  margin-left: 40px;
-  cursor: pointer;
+.restaurant__headline {
+  display: flex;
 }
-.restaurant i i :hover {
-  color: aqua;
+.restaurant__headline .title {
+  font-size: 28px;
+  font-family: shrikhand;
+  font-style: italic;
 }
 
 .menu {
-  margin-top: 32px;
+  padding-top: 40px;
 }
-.menu h2, .menu h3, .menu h4 {
-  font-size: 20px;
-}
-.menu .menu-item {
-  background-color: white;
-  padding: 16px;
-  border-radius: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 16px;
+.menu__card {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 0;
+  margin-top: 12px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  overflow: hidden;
   position: relative;
-  cursor: pointer;
-  height: 40px;
+  border-radius: 15px;
+}
+.menu__card:hover .price {
+  margin-right: 70px;
+}
+.menu__card:hover .menu__check {
+  margin-right: -10px;
+}
+.menu__card:hover .menu__infos--subtitle {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu__list {
+  display: flex;
+  width: 42px;
+  border-bottom: 3px solid #99E2D0;
+}
+.menu__list--title {
+  font-size: 24px;
+  width: 86%;
+}
+
+.heart {
+  padding-right: 26px;
+  padding-top: 2px;
 }/*# sourceMappingURL=resto1.css.map */
