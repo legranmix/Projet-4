@@ -5,23 +5,33 @@ body {
 .main-container {
     width: 100%;
 }
+a{
+    color: inherit;
+    text-decoration: none;
+}
 
 
     .header-container  {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }  
-     .link a {
-        font-size: 15px;
-    }  
-    .logo img {
-      font-size: 50px;
-        
-    }
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        width: 100%;
+        height: 63px;
+      
+     &__link  {
+        display: flex;
+        padding-top: 20px;
 
+    }
+    &__arrow{
+        font-size: 20px;
+        margin-left: 17px;
+        color: #000;
+    } 
+
+    &__logo  {
+        width: 150px;
+        margin-left: 90px;
+    }
+    }
 
     .image-bg{
         width: 100%;
@@ -30,40 +40,71 @@ body {
         position: relative;
         z-index: 1;
      }
+     .position{
+        width: 100%;
+        position: absolute;
+        top: 292px;
+        z-index: 2;
+        
+    
+     }
     .restaurant {
         display: flex;
         align-items:normal;
         flex-direction: column;
         background-color: #f6f6f6;
         border-top-right-radius: 40px;
-        border-bottom-left-radius: 40px;
+        border-top-left-radius: 40px;
         padding: 32px 13px 40px;
         margin: 0;
 
          &__headline {
             display: flex;
 
-             & .title {
+            .title {
                 font-size: 28px;
                 font-family: shrikhand;
                 font-style: italic;
+                font-weight: 400;
+                line-height: 41px;
 
+            }
+            .favorite {
+                cursor: pointer;
+                padding-bottom: 26px;
+                padding-right: 29px;
+                & i{
+                    position: absolute;
+                    margin-left: 60px;
+                    padding-top: 30px;
+                    font-size:24px;
+                }
+                &__full {
+                    opacity: 0;
+                    background-image: linear-gradient(#9356DC ,#ff79da);
+                    background-clip:text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    transition: 2s ease-out;
+                    &:hover,
+                    &:active {
+                        display: inline;
+                        opacity: 1;
+                        background-image: linear-gradient(#9356dc , #ff79da);
+                        background-clip: text;
+                        color: transparent;
+                        transition: 2s ease-out;
+                    }
+
+                    
+                }
             }
          }
          
 
-         }
-    
-    
-    
-
-        
-    
-     .menu {
-        padding-top: 40px;
-        
-        
-            &__card {
+         
+    .menu {
+        &__card {
                 display: flex;
                 padding: 0;
                 margin-top: 12px;
@@ -72,7 +113,9 @@ body {
                 overflow: hidden;
                 position: relative;
                 border-radius: 15px;
-                
+                width: 349px;
+                height: 70px;
+
                 &:hover .price {
                     margin-right: 70px;
                 }
@@ -81,31 +124,186 @@ body {
                 }
                 &:hover .menu__infos {
                     &--subtitle {
+                        font-family: Roboto;
                         text-overflow: ellipsis;
                         overflow: hidden;
+
                     }
                 }
-            }
+                
+            }   
+            
             &__list {
                 display: flex;
                 width: 42px;
                 border-bottom: 3px solid #99E2D0 ;
+                flex-direction: column;
 
                 &--title {
-                    font-size: 24px;
-                    width: 86%;
+                    font-size: 16px;
+                    font-weight: 300;
+                    font-family: Roboto;
+                    color: #000000;
+                    margin-bottom:5px;
                 }
             }
             
+
+
+
+            
+            &__content {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                justify-content: space-between;
+                flex: 1;
+                cursor: pointer;
+                overflow: hidden;
+                margin-left: 15px;
+                
+                
+
+                  &--infos {
+                    flex-grow: 1;
+                    display: flex;
+                    flex-direction: column;
+                    overflow: hidden;
+                    
+                   &:hover .card__title {
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        
+                    }
+
+                }
+                &:hover .menu__infos {
+                    width: 220px;
+                }
+            }
+            &__infos{
+                overflow: hidden;
+                padding-bottom: 15px;
+                &--subtitle {
+                    font-size: 16px;
+                    margin: 0;
+                }
+            }
+            .price {
+                padding: 13px 0;
+                margin-right: 15px;
+                font-weight: bold;
+             
+                
+            }
+
+           
+            &__check{
+                width: 70px;
+                height: 100%;
+                color: white;
+                display: flex;
+                align-items: center;
+                font-size: 24px;
+                background-color: #9356DC;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                transition: 400ms ease-in-out;
+                margin-right: -100px;
+                & .fa-check{
+                    color: white;
+                    margin-left: 18px;
+                }
+            }
         }
+        .card__title{
+            font-size: 18px;
+            font-family: Roboto;
+            
+            
+            
+        }
+     }
+     
+
+     
+
+     .btn {
+        padding: 13px 18px;
+        margin-top: 35px;
+        width: 185px;
+        height: 50px;
+        font-family: Roboto;
+        
+        border-radius: 25px;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.35 );
+        background:linear-gradient(#ff79da, #9356DC);
+
+        &:hover {
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+            background: linear-gradient(#ff79da, #9356DC);
+        }
+     }
+     .commander {
+        text-align: center;
+        &__btn {
+            padding: 16px 48px 15px 49px;
+        }
+     }
+
+     .infos{
+        background-color:#353535;
+        color: white;
+        &--padding {
+            padding: 22px 25px;
+            display: block;
+        }
+        &_logo{
+            font-size: 18px;
+            padding-right: 0;
+            font-family: Shrikhand;
+            font-style: italic;
+            font-weight: 100;
+        }
+        &_content {
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 0;
+            &--position {
+                display: flex;
+                align-items: center;
+                gap: 11px;
+            }
+         }
+         .contact-partenaire, .contact {
+            margin-right: 0;
+         }
+
+     }
+
+     @media (min-width:1024px) {
+        .header-container {
+            display: flex;
+            align-items: center;
+            
+        }
+        }
+        
+     
 
         
-
-        
-    .heart {
-        padding-right: 26px;
-        padding-top: 2px;
-    }
+    
 
     
 

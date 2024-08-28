@@ -9,7 +9,7 @@ body {
 h1, h2, h3 {
   margin: 0;
   padding: 0;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto;
 }
 
 a {
@@ -319,7 +319,7 @@ section {
 }
 
 .infos {
-  background-color: black;
+  background-color: #353535;
   color: white;
 }
 .infos--padding {
@@ -350,10 +350,7 @@ section {
   margin-right: 0;
 }
 
-@media (min-width: 768px) {
-  .step-container {
-    padding: 0 90px;
-  }
+@media (min-width: 767.98px) and (max-width: 1024px) {
   .position {
     top: 496px;
   }
@@ -389,26 +386,6 @@ section {
   .intro .explore-btn {
     white-space: nowrap;
   }
-  .fonctionnement {
-    margin: 0;
-    padding: 50px 0;
-  }
-  .fonctionnement__steps-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    justify-content: space-evenly;
-  }
-  .fonctionnement__step-card {
-    padding-bottom: 0;
-  }
-  .fonctionnement__step-content {
-    padding: 28px;
-    width: 80%;
-  }
-  .fonctionnement a {
-    width: 48%;
-  }
   .restaurants__cards {
     display: flex;
     flex-direction: row;
@@ -420,6 +397,9 @@ section {
   .restaurants__cards a {
     width: 30%;
     flex-grow: 1;
+  }
+  .card {
+    width: 100%;
   }
   .card__content {
     margin: 16px 25px 16px 18px;
@@ -452,14 +432,16 @@ section {
   }
 }
 @media (min-width: 1024px) {
+  .header-container .logo img {
+    width: 200px;
+  }
   .intro .intro-title {
     font-size: 40px;
     white-space: nowrap;
-    font-family: Roboto sans-serif;
-    font-weight: 700;
+    font-family: Roboto;
   }
   .intro .intro p {
-    font-size: 28px;
+    font-size: 30px;
   }
   .intro .explore-btn {
     font-size: 14px;
@@ -469,19 +451,18 @@ section {
     padding: 50px 0;
   }
   .fonctionnement__title {
-    margin-left: 180px;
-    font-family: Roboto sans-serif;
+    margin-left: 270px;
+    font-family: Roboto;
     font-size: 25px;
   }
   .fonctionnement__steps-cards {
     display: flex;
     gap: 32px;
-    margin-left: 60px;
-    justify-content: space-around;
+    margin-left: 270px;
   }
   .fonctionnement__step-card {
-    padding-bottom: 0;
-    display: flex;
+    width: 330px;
+    height: 72px;
   }
   .fonctionnement__step-content {
     padding: 28px 44px 28px 30px;
@@ -491,31 +472,25 @@ section {
     width: 30%;
   }
   .restaurants__cards {
-    margin: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 50px 100px;
-    margin-left: 160px;
+    margin-left: 260px;
+    margin-right: 200px;
   }
   .restaurants__cards a {
     width: 30%;
     flex-grow: 1;
   }
   .restaurants__cards .card {
-    width: 499px;
-    display: flex;
-    justify-content: center;
-  }
-  .restaurants__cards .card img {
-    width: 499px;
-    height: 231px;
+    width: 100%;
   }
   .restaurants__cards .card__content {
     margin: 16px 25px 16px 18px;
   }
   .restaurants__title {
-    margin-left: 160px;
+    margin-left: 260px;
   }
   .infos--padding {
     padding: 57px 25px 30px;
@@ -523,7 +498,7 @@ section {
     flex-direction: row-reverse;
   }
   .infos_logo {
-    padding-right: 44px;
+    padding-right: 84px;
   }
   .infos_content {
     flex-direction: row;
@@ -533,12 +508,12 @@ section {
   .infos_content--position {
     display: flex;
     align-items: center;
-    gap: 11px;
+    gap: 10px;
   }
-  .infos.contact-partenaire {
-    margin-right: 40px;
+  .infos .contact-partenaire {
+    margin-right: 80px;
   }
   .infos .contact {
-    margin-right: 70px;
+    margin-right: 90px;
   }
 }/*# sourceMappingURL=main.css.map */
