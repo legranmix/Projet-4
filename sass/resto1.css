@@ -237,22 +237,37 @@ a {
   display: flex;
   flex-direction: column;
   gap: 9px;
-  list-style-type: none;
-  padding-left: 0;
-  margin-bottom: 0;
 }
 .infos_content--position {
   display: flex;
   align-items: center;
-  gap: 11px;
 }
 .infos .contact-partenaire, .infos .contact {
   margin-right: 0;
 }
 
 @media (min-width: 1024px) {
-  .header-container {
+  .position {
+    top: 496px;
+  }
+  .header-container__logo {
+    margin-left: 700px;
+    width: 200px;
+  }
+  .image-bg {
+    height: 454px;
+  }
+  .restaurant {
+    padding: 51px 20px 40px;
+    margin: 0 192px;
+    align-items: center;
+  }
+  .restaurant__headline {
     display: flex;
     align-items: center;
+    gap: 24px;
+  }
+  .restaurant .favorite {
+    padding-bottom: 80px;
   }
 }/*# sourceMappingURL=resto1.css.map */

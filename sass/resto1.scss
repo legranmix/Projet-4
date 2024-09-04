@@ -47,7 +47,9 @@ a{
         z-index: 2;
         
     
-     }
+
+    }
+     
     .restaurant {
         display: flex;
         align-items:normal;
@@ -123,6 +125,7 @@ a{
                     margin-right: -10px;
                 }
                 &:hover .menu__infos {
+                    
                     &--subtitle {
                         font-family: Roboto;
                         text-overflow: ellipsis;
@@ -277,13 +280,13 @@ a{
             display: flex;
             flex-direction: column;
             gap: 9px;
-            list-style-type: none;
-            padding-left: 0;
-            margin-bottom: 0;
+            
+            
+            
             &--position {
                 display: flex;
                 align-items: center;
-                gap: 11px;
+                
             }
          }
          .contact-partenaire, .contact {
@@ -292,13 +295,45 @@ a{
 
      }
 
+
+
      @media (min-width:1024px) {
-        .header-container {
-            display: flex;
+    
+        .position {
+            top:496px
+        }
+        
+        .header-container__logo {
+           margin-left: 700px;
+           width:200px;
+        }
+        
+        .image-bg {
+            height: 454px;
+        }
+        .restaurant{
+            padding: 51px 20px 40px;
+            margin: 0 192px;
             align-items: center;
             
+            &__headline {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+            }
+            .favorite{
+                padding-bottom: 80px;
+            }
         }
+        
+
         }
+        
+
+        
+            
+
+        
         
      
 
