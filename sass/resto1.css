@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+h3 {
+  margin: 0;
+}
+
 .header-container {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
