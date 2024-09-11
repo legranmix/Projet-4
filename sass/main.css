@@ -411,15 +411,15 @@ section {
   .infos--padding {
     padding: 57px 25px 30px;
   }
-  .infos__logo {
+  .infos_logo {
     padding-right: 12px;
   }
-  .infos__content {
+  .infos_content {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
-  .infos__content--position {
+  .infos_content--position {
     display: flex;
     align-items: center;
     gap: 11px;

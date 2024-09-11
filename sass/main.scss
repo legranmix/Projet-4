@@ -579,10 +579,10 @@ width: 244px;
         
       
       }
-      &__logo {
+      &_logo {
         padding-right: 12px;
       }
-      &__content{
+      &_content{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -594,10 +594,10 @@ width: 244px;
           gap: 11px;
         }
       }
-      & .contact-partenaire{
+       .contact-partenaire{
         margin-right: 20px;
       }
-      & .contact{
+       .contact{
         margin-right:40px;
       }
 
