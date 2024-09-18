@@ -464,7 +464,6 @@ width: 244px;
   font-size: 18px;
   padding-right: 0;
   font-family: Shrikhand;
-  font-style: italic;
   font-weight: 100;
  }
  &_content{
@@ -534,8 +533,19 @@ width: 244px;
   }
   
     
-    
+   .fonctionnement {
+      
 
+     &__steps-cards {
+       display: flex;
+       justify-content: space-evenly;
+       flex-wrap: wrap;
+       gap: 24px;
+     }
+     &__step-card {
+      padding-bottom: 0;
+     }
+  }
     
   
     
@@ -572,15 +582,17 @@ width: 244px;
 
 
     .infos {
-      display: flex;
-      flex-direction: row-reverse;
+      
+      
       &--padding {
         padding: 57px 25px 30px;
-        
-      
+        flex-direction: row-reverse;
+        display: flex;
       }
       &_logo {
         padding-right: 12px;
+        padding-top: 15px;
+        
       }
       &_content{
         display: flex;
@@ -754,7 +766,8 @@ width: 244px;
       flex-direction: row-reverse;
     }
     &_logo{
-      padding-right: 84px;
+      padding-right: 50px;
+      padding-bottom: 7px;
     
       
       
@@ -763,6 +776,7 @@ width: 244px;
       flex-direction: row;
       align-items: center;
       margin: 0;
+      font-size: 17px;
 
       &--position{
         display: flex;
@@ -773,10 +787,10 @@ width: 244px;
       }
     }
     .contact-partenaire {
-      margin-right: 80px;
+      margin-right: 30px;
     }
        & .contact{
-        margin-right: 90px;
+        margin-right: 80px;
        }
 
 }

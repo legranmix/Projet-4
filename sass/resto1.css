@@ -120,6 +120,10 @@ h3 {
   font-family: Roboto;
   text-overflow: ellipsis;
   overflow: hidden;
+  white-space: nowrap;
+}
+.restaurant .menu__card:hover .menu__infos--subtitle__title {
+  white-space: nowrap;
 }
 .restaurant .menu__list {
   display: flex;
@@ -263,11 +267,76 @@ h3 {
     width: 200px;
   }
   .image-bg {
-    height: 445px;
+    height: 460px;
   }
   .restaurant {
     padding: 51px 10px 40px;
     margin: 0 192px;
+    align-items: center;
+  }
+  .restaurant__headline {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .restaurant .favorite {
+    padding-bottom: 80px;
+  }
+  .restaurant .menu {
+    width: 66%;
+  }
+  .restaurant .menu__card {
+    width: 634px;
+  }
+  .restaurant .menu__card:hover .menu__infos, .restaurant .menu__card:hover .title {
+    width: 100%;
+  }
+  .restaurant .menu__content:hover {
+    width: 90%;
+  }
+  .restaurant .menu__content--infos {
+    width: 100%;
+  }
+  .infos--padding {
+    padding: 57px 25px 30px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .infos_logo {
+    padding-right: 50px;
+    padding-bottom: 7px;
+  }
+  .infos_content {
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    font-size: 17px;
+  }
+  .infos_content--position {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .infos .contact-partenaire {
+    margin-right: 30px;
+  }
+  .infos .contact {
+    margin-right: 80px;
+  }
+}
+@media (min-width: 767.98px) and (max-width: 1024px) {
+  .position {
+    top: 496px;
+  }
+  .header-container {
+    width: 100%;
+  }
+  .header-container__logo {
+    margin-left: 250px;
+  }
+  .restaurant {
+    padding: 51px 20px 40px;
+    margin: 0 100px;
     align-items: center;
   }
   .restaurant__headline {
@@ -284,28 +353,24 @@ h3 {
     flex-direction: row-reverse;
   }
   .infos_logo {
-    padding-right: 84px;
+    padding-right: 12px;
+    padding-top: 15px;
+    align-items: center;
   }
   .infos_content {
+    display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0;
   }
   .infos_content--position {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 11px;
   }
   .infos .contact-partenaire {
-    margin-right: 80px;
+    margin-right: 20px;
   }
   .infos .contact {
-    margin-right: 90px;
-  }
-}
-@media (min-width: 767.98px) and (max-width: 1024px) {
-  .restaurant__headline {
-    display: flex;
-    justify-content: center;
+    margin-right: 40px;
   }
 }/*# sourceMappingURL=resto1.css.map */
