@@ -65,6 +65,9 @@ h3{
 
          &__headline {
             display: flex;
+            
+            
+             
 
             .title {
                 font-size: 28px;
@@ -199,6 +202,8 @@ h3{
                 &--subtitle {
                     font-size: 16px;
                     margin: 0;
+                    font-family: Roboto;
+                    white-space: nowrap;
                 }
             }
             .price {
@@ -217,7 +222,7 @@ h3{
                 display: flex;
                 align-items: center;
                 font-size: 24px;
-                background-color:#008766;
+                background-color:#99E2D0;
                 border-top-right-radius: 15px;
                 border-bottom-right-radius: 15px;
                 position: absolute;
@@ -332,7 +337,8 @@ h3{
             &__headline {
                 display: flex;
                 align-items: center;
-                gap: 24px;
+                justify-content: center;
+                
             }
             
         

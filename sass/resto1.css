@@ -169,6 +169,8 @@ h3 {
 .restaurant .menu__infos--subtitle {
   font-size: 16px;
   margin: 0;
+  font-family: Roboto;
+  white-space: nowrap;
 }
 .restaurant .menu .price {
   padding: 13px 0;
@@ -182,7 +184,7 @@ h3 {
   display: flex;
   align-items: center;
   font-size: 24px;
-  background-color: #008766;
+  background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   position: absolute;
@@ -277,7 +279,7 @@ h3 {
   .restaurant__headline {
     display: flex;
     align-items: center;
-    gap: 24px;
+    justify-content: center;
   }
   .restaurant .favorite {
     padding-bottom: 80px;
