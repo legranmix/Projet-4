@@ -272,7 +272,7 @@ h3 {
     height: 460px;
   }
   .restaurant {
-    padding: 51px 10px 40px;
+    padding: 51px 20px 40px;
     margin: 0 192px;
     align-items: center;
   }
@@ -280,15 +280,20 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 24px;
   }
   .restaurant .favorite {
     padding-bottom: 80px;
   }
+  .restaurant .container {
+    padding: 0;
+  }
   .restaurant .menu {
     width: 66%;
+    margin-left: 100px;
   }
   .restaurant .menu__card {
-    width: 634px;
+    width: 635px;
   }
   .restaurant .menu__card:hover .menu__infos, .restaurant .menu__card:hover .title {
     width: 100%;

@@ -330,7 +330,7 @@ h3{
         }
        
         .restaurant{
-            padding: 51px 10px 40px;
+            padding: 51px 20px 40px;
             margin: 0 192px;
             align-items: center;
             
@@ -338,25 +338,35 @@ h3{
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                gap: 24px;
                 
             }
             
         
             .favorite{
                 padding-bottom: 80px;
-              }   
+              } 
+              .container{
+                padding: 0;
+              }  
             
 
 
- .menu{
+           .menu{
             width: 66%;
-          &__card {
-                width: 634px;
+            margin-left: 100px;
+
+               &__card {
+                width: 635px;
+        
+                
                 &:hover .menu__infos,
                 &:hover .title {
                     width: 100%;
+                
                 }
             }
+            
             &__content:hover{
                 width: 90%;
             }
