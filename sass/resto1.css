@@ -1,5 +1,6 @@
 body {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .main-container {
@@ -36,18 +37,16 @@ h3 {
 
 .image-bg {
   width: 100%;
-  height: 100%;
+  height: 275px;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
-  z-index: 1;
+  z-index: -1;
 }
 
 .position {
-  width: 100%;
-  position: absolute;
+  margin-top: -40px;
   top: 292px;
-  z-index: 2;
 }
 
 .restaurant {
@@ -62,6 +61,7 @@ h3 {
 }
 .restaurant__headline {
   display: flex;
+  justify-content: center;
 }
 .restaurant__headline .title {
   font-size: 28px;
@@ -77,7 +77,7 @@ h3 {
 }
 .restaurant__headline .favorite i {
   position: absolute;
-  margin-left: 60px;
+  margin-left: 25px;
   padding-top: 30px;
   font-size: 24px;
 }
@@ -107,7 +107,7 @@ h3 {
   overflow: hidden;
   position: relative;
   border-radius: 15px;
-  width: 349px;
+  width: 100%;
   height: 70px;
 }
 .restaurant .menu__card:hover .price {
@@ -197,6 +197,51 @@ h3 {
   color: white;
   margin-left: 18px;
 }
+.restaurant .menus__1 {
+  animation: menus 1s ease-in-out forwards;
+}
+.restaurant .menus__2 {
+  animation: menus 2s ease-in-out forwards;
+}
+.restaurant .menus__3 {
+  animation: menus 3s ease-in-out forwards;
+}
+.restaurant .menus__4 {
+  animation: menus 4s ease-in-out forwards;
+}
+.restaurant .menus .menu__item--1 {
+  transform-origin: left;
+  animation: menu 700ms both;
+}
+.restaurant .menus .menu__item--2 {
+  transform-origin: left;
+  animation: menu 860ms both;
+}
+.restaurant .menus .menu__item--3 {
+  transform-origin: left;
+  animation: menu 990ms both;
+}
+.restaurant .menus .menui__tem--4 {
+  transform-origin: left;
+  animation: menu 1090ms both;
+}
+@keyframes menus {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes menu {
+  0% {
+    transform: scale(0, 0.6);
+  }
+  33% {
+    transform: scale(1, 0.6);
+    animation-timing-function: cubic-bezier(0.7, 0.01, 0.2, 0.8);
+  }
+}
 .restaurant .card__title {
   font-size: 18px;
   font-family: Roboto;
@@ -219,6 +264,8 @@ h3 {
 .btn:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
   background: linear-gradient(#ff79da, #9356DC);
+  filter: brightness(1.2);
+  cursor: pointer;
 }
 
 .commander {
@@ -237,11 +284,11 @@ h3 {
   display: block;
 }
 .infos_logo {
-  font-size: 18px;
+  width: 200px;
+  height: 34px;
   padding-right: 0;
   font-family: Shrikhand;
   font-style: italic;
-  font-weight: 100;
 }
 .infos_content {
   display: flex;
@@ -250,6 +297,9 @@ h3 {
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 0;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
 }
 .infos_content--position {
   display: flex;
@@ -265,22 +315,22 @@ h3 {
     top: 496px;
   }
   .header-container__logo {
-    margin-left: 700px;
+    margin-left: 600px;
     width: 200px;
   }
   .image-bg {
-    height: 460px;
+    height: 450px;
   }
   .restaurant {
     padding: 51px 20px 40px;
-    margin: 0 192px;
+    margin: 0 auto;
     align-items: center;
+    width: 70%;
   }
   .restaurant__headline {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 24px;
   }
   .restaurant .favorite {
     padding-bottom: 80px;
@@ -290,10 +340,11 @@ h3 {
   }
   .restaurant .menu {
     width: 66%;
-    margin-left: 100px;
   }
   .restaurant .menu__card {
-    width: 635px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .restaurant .menu__card:hover .menu__infos, .restaurant .menu__card:hover .title {
     width: 100%;
@@ -349,10 +400,10 @@ h3 {
   .restaurant__headline {
     display: flex;
     align-items: center;
-    gap: 24px;
   }
   .restaurant .favorite {
     padding-bottom: 80px;
+    margin-left: -10px;
   }
   .infos--padding {
     padding: 57px 25px 30px;

@@ -1,5 +1,8 @@
 body {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1440px;
+    
+    
     
 }
 .main-container {
@@ -37,17 +40,16 @@ h3{
 
     .image-bg{
         width: 100%;
-        height:100% ;
+        height: 275px;
         object-fit: cover;
         position: relative;
-        z-index: 1;
+        z-index: -1;
         
      }
-     .position{
-        width: 100%;
-        position: absolute;
+     .position {
+        margin-top: -40px;
         top: 292px;
-        z-index: 2;
+        
         
     
 
@@ -65,6 +67,7 @@ h3{
 
          &__headline {
             display: flex;
+            justify-content: center;
             
             
              
@@ -83,7 +86,7 @@ h3{
                 padding-right: 29px;
                 & i{
                     position: absolute;
-                    margin-left: 60px;
+                    margin-left: 25px;
                     padding-top: 30px;
                     font-size:24px;
                 }
@@ -121,7 +124,7 @@ h3{
                 overflow: hidden;
                 position: relative;
                 border-radius: 15px;
-                width: 349px;
+                width: 100%;
                 height: 70px;
 
                 &:hover .price {
@@ -236,6 +239,57 @@ h3{
                 }
             }
         }
+        .menus {
+            &__1{
+                animation: menus 1s ease-in-out forwards;
+            }
+            &__2{
+                animation: menus 2s ease-in-out forwards;
+            }
+            &__3{
+                animation: menus 3s ease-in-out forwards;
+            }
+            &__4{
+                animation: menus 4s ease-in-out forwards;
+            }
+            .menu {
+            &__item--1{
+                transform-origin: left;
+                animation: menu 700ms both;
+            }
+            &__item--2{
+                transform-origin: left;
+                animation: menu 860ms both;
+            }
+            &__item--3{
+                transform-origin: left;
+                animation:  menu 990ms both;
+            }
+            &i__tem--4{
+                transform-origin: left;
+                animation: menu 1090ms both;
+            }
+           }
+           
+
+           }
+           @keyframes menus {
+            0% {
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+          }
+          @keyframes menu{
+          0% {
+            transform:scale(0, 0.6);
+        }
+        33%{
+            transform: scale(1, 0.6);
+            animation-timing-function: cubic-bezier(0.70, 0.01, 0.2, 0.80);
+        }
+      }
         .card__title{
             font-size: 18px;
             font-family: Roboto;
@@ -254,7 +308,6 @@ h3{
         width: 185px;
         height: 50px;
         font-family: Roboto;
-        
         border-radius: 25px;
         color: white;
         font-size: 16px;
@@ -265,7 +318,10 @@ h3{
 
         &:hover {
             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
-            background: linear-gradient(#ff79da, #9356DC);
+            background:linear-gradient(#ff79da, #9356DC);
+            filter: brightness(1.2);
+            
+            cursor: pointer;
         }
      }
      .commander {
@@ -283,11 +339,12 @@ h3{
             display: block;
         }
         &_logo{
-            font-size: 18px;
+            width: 200px;
+            height: 34px;
             padding-right: 0;
             font-family: Shrikhand;
             font-style: italic;
-            font-weight: 100;
+
         }
         &_content {
             display: flex;
@@ -296,6 +353,9 @@ h3{
             list-style-type: none;
             padding-left: 0;
             margin-bottom: 0;
+            font-family:Roboto;
+            font-size: 16px;
+            font-weight: 500;
             
             
             
@@ -317,34 +377,40 @@ h3{
      @media (min-width:1024px) {
     
         .position {
-            top:496px
+        
+            top:496px;
+            
         }
         
         .header-container__logo {
-           margin-left: 700px;
+           margin-left: 600px;
            width:200px;
         }
         
         .image-bg {
-            height: 460px;
+            height: 450px;
         }
        
         .restaurant{
             padding: 51px 20px 40px;
-            margin: 0 192px;
+            margin: 0 auto;
             align-items: center;
+            width: 70%;
+            
             
             &__headline {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: 24px;
+                
+            
                 
             }
             
         
             .favorite{
                 padding-bottom: 80px;
+    
               } 
               .container{
                 padding: 0;
@@ -354,10 +420,12 @@ h3{
 
            .menu{
             width: 66%;
-            margin-left: 100px;
+            
 
                &__card {
-                width: 635px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
         
                 
                 &:hover .menu__infos,
@@ -382,6 +450,7 @@ h3{
         }
         
         .infos {
+        
              &--padding {
                 padding: 57px  25px  30px;
                 display: flex;
@@ -436,10 +505,11 @@ h3{
     &__headline{
         display: flex;
         align-items: center;
-        gap: 24px;
+        
     }
     .favorite{
         padding-bottom: 80px;
+        margin-left: -10px;
         
     }
     }
