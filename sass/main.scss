@@ -281,8 +281,8 @@ width: 100%;
 
   .restaurant-bg{
     background-color: #F6F6F6;
-    padding-left:5px;
-    padding-right:5px;
+    padding-left:10px;
+    padding-right:10px;
   
   }
 
@@ -665,28 +665,21 @@ width: 100%;
   .fonctionnement {
     margin: 0;
     padding: 50px 0;
+    box-sizing: border-box;
+    padding-right: 5%;
     
-    &__title{
+     &__title{
     
       font-family: Roboto;
       font-size: 25px;
-      
-
-    }
+   }
 
     &__steps-cards{
       display: flex;
       gap: 32px;
-      
-  
-    
-      
-    
-    
-      
     }
     &__step-card{
-      width: 30%;
+      width: 25.5%;
       height: 72px;
     }
     &__step-content {
@@ -703,21 +696,17 @@ width: 100%;
   }
 
   .steps-container{
-    width: 90%;
-    
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
     
   }
 
+  .restaurant-bg{
+  padding-left: 10%;
+  padding-right: 10%;
   
-
-  
-   
-  
-  
-
-
-
-
+}
 .restaurants__cards{
 
   display: flex;
@@ -730,7 +719,7 @@ width: 100%;
       flex-grow: 1;
   }
     .card{
-  width: 80%;
+  width: 100%;
      &__content{
     margin: 16px 25px 16px 18px;
   }
